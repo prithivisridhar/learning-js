@@ -1,13 +1,14 @@
 ﻿console.log("hello world!!");
 
+//the variables are definite but dynamic
 var myName = "niranjan awati";
 console.log(typeof myName);
 myName = 2334;
 console.log(typeof myName);
-
-
 console.log(myName);
 
+
+//there is basically no float and int
 var empno = 41993;
 console.log(empno);
 
@@ -58,5 +59,6 @@ function Dothis(param1, param2) {
     return param1 + param2;
 }
 console.log(typeof Dothis);
+
 console.log(Dothis(10, 20));
 console.log(Dothis(10));
