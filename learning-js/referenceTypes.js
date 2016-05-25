@@ -24,19 +24,24 @@ var mysore = mergerLocations.filter(function (el, idx) {
 console.log(mysore);
 
 var users = [
-    { name: "fsdf", location: "Pune" },
-    { name: "fsdf", location: "Pune" },
-    { name: "fsdf", location: "Mysore" },
-    { name: "fsdf", location: "Delhi" },
-    { name: "fsdf", location: "Bangalore" },
-    { name: "fsdf", location: "Pune" },
-    { name: "fsdf", location: "Pune" },
-    { name: "fsdf", location: "Pune" },
-    { name: "fsdf", location: "Mysore" },
-    { name: "fsdf", location: "Mysore" },
+    { name: "person1", location: "Pune" },
+    { name: "person2", location: "Pune" },
+    { name: "person3", location: "Mysore" },
+    { name: "person4", location: "Delhi" },
+    { name: "person5", location: "Bangalore" },
+    { name: "person6", location: "Pune" },
+    { name: "person7", location: "Pune" },
+    { name: "person8", location: "Pune" },
+    { name: "person9", location: "Mysore" },
+    { name: "person10", location: "Mysore" },
 
 ];
 var mysoreUsers = users.filter(function (el, indx) {
     return el.location == "Mysore";
 });
 console.table(mysoreUsers);
+
+var userNames = users.map(function (el, idx) {
+    return el.name;
+});
+console.table(userNames);
