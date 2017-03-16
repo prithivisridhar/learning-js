@@ -35,21 +35,23 @@ if (myVariable > 5) {
   console.log("if all the above conditions are false");
 }
 
-
+// Switch example 1
 var counter = 20;
 switch (counter <4) { // swtich accepts an expression , evaluated once
-  case counter>= 50 : // cases can be expressions too
+  case counter>= 50 : // cases cannot be expressions !
     console.log("Case 1 successful");
     break;
-  case counter >= 10 :
+  case 20 : // cases can only be values
     console.log("another case");
     break;
   default:
     console.log("if all above cases are false, this is executed");
 }
+
+//switch example 2 -- happy case
 var counter = 1;
-switch (counter) {
-  case 10:
+switch (counter) { // this expression is evaluated only once
+  case 10: // checked against the values
     console.log(counter);
     break;
   case 1:
