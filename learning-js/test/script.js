@@ -33,17 +33,21 @@ console.log(typeof numStr); //string
 var myNum1 = Number(numStr);
 console.log(typeof myNum1);// number
 
+console.log("********Let's look at objects now*********");
 // object literal
-var obj = {
+var firstObj = {
   name : "Ruchira",
   id : 106456,
   dept : "ENGCR"
 }
-console.log(obj);
-console.log(typeof obj);
+console.log(firstObj);
+console.log(typeof firstObj);
 // objects are dynamic in nature, giving us overwriting capabilities
-obj.dept = "ENG";
-console.log(obj);
+firstObj.dept = "ENG";
+console.log(firstObj);
+console.log("******Retrieving properties' values******");
+console.log(firstObj.dept);
+console.log(firstObj["dept"]);
 
 //Array Literals
 var namesArray = ["Ruchira","Ansh","Aprajita"];
