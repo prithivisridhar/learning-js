@@ -35,17 +35,18 @@ if (myVariable > 5) {
   console.log("if all the above conditions are false");
 }
 
-// var counter = 20;
-// switch (counter) {
-//   case counter <5:
-//     console.log("Case 1 successful");
-//     break;
-//   case counter >= 10 :
-//     console.log("another case");
-//     break;
-//   default:
-//     console.log("if all above cases are false, this is executed");
-// }
+
+var counter = 20;
+switch (counter <4) { // swtich accepts an expression , evaluated once
+  case counter>= 50 : // cases can be expressions too
+    console.log("Case 1 successful");
+    break;
+  case counter >= 10 :
+    console.log("another case");
+    break;
+  default:
+    console.log("if all above cases are false, this is executed");
+}
 var counter = 1;
 switch (counter) {
   case 10:
